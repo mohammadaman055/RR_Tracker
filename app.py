@@ -50,19 +50,19 @@ init_db()
 
 # Hardcoded members and their PINs
 water_members_with_pins = {
-    "Person 1": "1234",
-    "Person 2": "2345",
-    "Person 3": "3456",
-    "Person 4": "4567",
-    "Person 5": "5678"
+    "Saiteja": "1234",
+    "Ratnesh": "2345",
+    "Rohit": "3456",
+    "Harithik": "4567",
+    "Aman": "5678"
 }
 
 dustbin_members_with_pins = {
-    "Person 1": "1234",
-    "Person 2": "2345",
-    "Person 3": "3456",
-    "Person 4": "4567",
-    "Person 5": "5678"
+    "Aman": "1234",
+    "Ratnesh": "2345",
+    "Saiteja": "3456",
+    "Debjith": "4567",
+    "Harithik": "5678"
 }
 
 # Helper function to fetch state from the respective tracker
