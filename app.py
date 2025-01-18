@@ -44,8 +44,8 @@ def init_db():
                 currentIndex INTEGER NOT NULL
             )
         """)
-        cursor.execute("""
-            INSERT INTO water_current (id, currentIndex) VALUES (1, 0) ON CONFLICT (id) DO UPDATE SET currentIndex = EXCLUDED.currentIndex; """)
+        # cursor.execute("""
+        #     INSERT INTO water_current (id, currentIndex) VALUES (1, 0) ON CONFLICT (id) DO UPDATE SET currentIndex = EXCLUDED.currentIndex; """)
 
         # Create dustbin_turns table
         cursor.execute("""
@@ -61,11 +61,11 @@ def init_db():
                 currentIndex INTEGER NOT NULL
             )
         """)
-        cursor.execute("""
-            INSERT INTO dustbin_current (id, currentIndex)
-            VALUES (1, 0)
-            ON CONFLICT (id) DO UPDATE SET currentIndex = EXCLUDED.currentIndex
-        """)
+        # cursor.execute("""
+        #     INSERT INTO dustbin_current (id, currentIndex)
+        #     VALUES (1, 0)
+        #     ON CONFLICT (id) DO UPDATE SET currentIndex = EXCLUDED.currentIndex
+        # """)
 
         conn.commit()
         conn.close()
